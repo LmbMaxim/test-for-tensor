@@ -1,3 +1,4 @@
+import os
 import pytest
 from selenium import webdriver
 
@@ -7,7 +8,8 @@ from selenium import webdriver
 def driver():
 
     options = webdriver.ChromeOptions() ;
-    prefs = {"download.default_directory" : "/home/maxim/src/for-tensor/"}
+    path = os.getcwd()
+    prefs = {"download.default_directory" : path}
     options.add_experimental_option("prefs",prefs)
     driver = webdriver.Chrome(options=options)
 
