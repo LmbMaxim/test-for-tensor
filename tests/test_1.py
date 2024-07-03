@@ -3,10 +3,10 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-from page_objects.sbis_home import SbisHome
 from page_objects.sbis_contacts import SbisContacts
-from page_objects.tensor_home import TensorHome
+from page_objects.sbis_home import SbisHome
 from page_objects.tensor_about import TensorAbout
+from page_objects.tensor_home import TensorHome
 
 
 
